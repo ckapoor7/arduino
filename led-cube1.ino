@@ -3,12 +3,12 @@
 #define CUBESIZE 4
 #define PLANESIZE CUBESIZE*CUBESIZE
 #define PLANETIME 3333 // time each plane is displayed in us -> 100 Hz refresh
-#define TIMECONST 20 // multiplies DisplayTime to get ms - why not =100?
+#define TIMECONST 20 // multiplies DisplayTime to get ms 
 
 // LED Pattern Table in PROGMEM - last column is display time in 100ms units
-// TODO this could be a lot more compact but not with binary pattern representation
+
 prog_uchar PROGMEM PatternTable[] = {
-  // blink on and off
+  // blink pattern:)
 
   B0001,B0000,B0000,B0000,B0001,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,10,
   B0011,B0000,B0000,B0000,B0011,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,B0000,10,
@@ -397,7 +397,7 @@ prog_uchar PROGMEM PatternTable[] = {
 
 
 
-  // this is a dummy element for end of table (duration=0) aka !!!DO NOT TOUCH!!!
+  // dummy element for end of table (duration=0) 
   B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, B0000, 0
 };
 
